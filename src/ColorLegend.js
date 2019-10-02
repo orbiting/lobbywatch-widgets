@@ -4,6 +4,8 @@ import { css, merge } from 'glamor'
 
 import { fontStyles, colors } from '@project-r/styleguide'
 
+export const SIZE = 8
+
 const styles = {
   container: css({
     marginBottom: 10
@@ -23,27 +25,26 @@ const styles = {
     fontFeatureSettings: '"tnum" 1, "kern" 1'
   }),
   labelWithColor: css({
-    paddingLeft: 12,
-    position: 'relative',
-    minHeight: 8
+    paddingLeft: SIZE + 4,
+    position: 'relative'
   }),
   inlineLabel: css({
     display: 'inline-block',
-    marginRight: 12
+    marginRight: SIZE + 4
   }),
   color: css({
     position: 'absolute',
     left: 0,
-    top: 5,
-    width: 8,
-    height: 8
+    top: 12 - SIZE,
+    width: SIZE,
+    height: SIZE
   }),
   circle: css({
     borderRadius: '50%',
   })
 }
 
-export const ColorValue = ({ shape = 'circle', inline, color, label }) =>
+const ColorValue = ({ shape = 'circle', inline, color, label }) =>
   <span {...merge(styles.label, inline && styles.inlineLabel, !!color && styles.labelWithColor)}>
     {!!color && (
       <span

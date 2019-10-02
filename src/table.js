@@ -5,7 +5,7 @@ import { Editorial, colors, fontStyles } from '@project-r/styleguide'
 
 import parliamentarians from './data/parliamentarians.json'
 
-import ColorLegend from './ColorLegend'
+import ColorLegend, { SIZE as COLOR_SIZE } from './ColorLegend'
 
 const PORTAITS_BASE_URL = 'https://cdn.repub.ch/s3/republik-assets/dynamic-components/lobbywatch-widgets/portraits'
 
@@ -34,16 +34,17 @@ const styles = {
     paddingRight: PADDING
   }),
   portrait: css({
-    width: 45,
-    height: 45,
+    width: 40,
+    height: 40,
+    marginRight: 10,
     borderRadius: '50%',
     float: 'left'
   }),
   color: css({
     display: 'inline-block',
     borderRadius: '50%',
-    width: 8,
-    height: 8,
+    width: COLOR_SIZE,
+    height: COLOR_SIZE,
     marginLeft: 4
   })
 }
@@ -75,11 +76,20 @@ const Table = ({ title, lead, sources, data, labels }) => {
       <table {...styles.table}>
         {rows.map((row, i) => {
           const parliamentarian = row.parliamentarian
-          return <tr key={parliamentarian ? parliamentarian.id : i}>
+          return <tr key={parliamentarian ? parliamentarian.id : i} style={{
+            background: i % 2 ? colors.secondaryBg : undefined
+          }}>
             <td {...styles.td}>
               {parliamentarian &&
-                <img {...styles.portrait} src={`${PORTAITS_BASE_URL}/${parliamentarian.parliamentId}`} alt='Porträtbild' />}
-              {row.name || parliamentarian.name}<br />
+                <img {...styles.portrait} src={`${PORTAITS_BASE_URL}/${parliamentarian.parliamentId}.jpg`} alt='Porträtbild' />}
+              {parliamentarian
+                ? <Editorial.A
+                  href={`https://lobbywatch.ch/de/daten/parlamentarier/${parliamentarian.id.split('-').pop()}/${encodeURIComponent(parliamentarian.name)}`}
+                  title='Interessenbindungen auf lobbywatch.ch'>
+                    {parliamentarian.name}
+                </Editorial.A>
+                : row.name}
+              <br />
               {[
                 parliamentarian && parliamentarian.partyMembership.party.abbr,
                 parliamentarian && parliamentarian.canton,
@@ -87,8 +97,8 @@ const Table = ({ title, lead, sources, data, labels }) => {
               ].filter(Boolean).join(', ')}
             </td>
             <td {...styles.td} style={{
-              verticalAlign: 'top',
-              textAlign: 'right'
+              verticalAlign: 'middle',
+              textAlign: 'center'
             }}>
               {row.values && row.values.map(value => {
                 const label = labelIndex[value]
