@@ -17,7 +17,7 @@ npm run deploy
 
 ### Clear CDN
 
-Goto https://app.keycdn.com/zones/purgeurl/87880 and enter:
+Goto https://app.keycdn.com/zones/purgeurl/136385 and enter:
 
 ```
 /s3/republik-assets/dynamic-components/lobbywatch-widgets/table.js

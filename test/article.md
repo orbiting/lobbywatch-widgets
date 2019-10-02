@@ -65,7 +65,7 @@ Hüllen sich in 3 Tüchern: Diskretion, lasche Gesetze und das Berufsgeheimnis.
       {"name": "Walti Beat", "secondaryLabel": "selbständig", "values": ["WAK"]}
     ]
   },
-  "src": "https://cdn.republik.space/s3/republik-assets/dynamic-components/lobbywatch-widgets/table.js"
+  "src": "https://cdn.repub.ch/s3/republik-assets/dynamic-components/lobbywatch-widgets/table.js"
 }
 ```
 
