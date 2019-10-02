@@ -4,7 +4,7 @@ import { css, merge } from 'glamor'
 
 import { fontStyles, colors } from '@project-r/styleguide'
 
-export const SIZE = 8
+export const SIZE = 10
 
 const styles = {
   container: css({

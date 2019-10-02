@@ -25,7 +25,7 @@ Hüllen sich in 3 Tüchern: Diskretion, lasche Gesetze und das Berufsgeheimnis.
 {
   "autoHtml": true,
   "props": {
-    "title": "Rechtsanwälte im Nationalräte",
+    "title": "Die Rechtsanwälte im Nationalrat",
     "lead": "",
     "sources": [
       {
@@ -34,14 +34,35 @@ Hüllen sich in 3 Tüchern: Diskretion, lasche Gesetze und das Berufsgeheimnis.
         "href": "https://lobbywatch.ch/de"
       }
     ],
+    "labelTitle": "Wirtschaftlich relevante Kommissionen:",
     "labels": [
-      {"value": "KVF", "color": "red", "label": "Kommission für Verkehr und Fernmeldewesen"}
+      {"value": "WAK", "color": "#1f77b4", "label": "Wirtschaft und Abgaben"},
+      {"value": "SGK", "color": "#ff7f0e", "label": "soziale Sicherheit und Gesundheit"},
+      {"value": "UREK", "color": "#2ca02c", "label": "Umwelt, Raumplanung und Energie"},
+      {"value": "KVF", "color": "#d62728", "label": "Verkehr und Fernmeldewesen"}
     ],
     "data": [
       {"parliamentId": "4154", "secondaryLabel": "selbständig"},
       {"parliamentId": "4187", "secondaryLabel": "selbständig"},
       {"parliamentId": "4230", "secondaryLabel": "selbständig"},
-      {"name": "Manfred Bühler", "secondaryLabel": "selbständig", "parliamentId": "4157", "values": ["KVF"]}
+      {"name": "Bühler Manfred", "secondaryLabel": "selbständig", "values": ["KVF"]},
+      {"name": "Burkart Thierry", "secondaryLabel": "selbständig", "values": []},
+      {"name": "Egloff Hans", "secondaryLabel": "selbständig", "values": ["WAK"]},
+      {"name": "Corina Eichenberger-Walther", "secondaryLabel": "selbständig", "values": []},
+      {"name": "Margret Kiener Nellen", "secondaryLabel": "selbständig", "values": []},
+      {"name": "Lüscher Christian", "secondaryLabel": "selbständig", "values": ["WAK"]},
+      {"name": "Merlini Giovanni", "secondaryLabel": "selbständig", "values": []},
+      {"name": "Moret Isabelle", "secondaryLabel": "angestellt", "values": ["SGK"]},
+      {"name": "Müller Leo", "secondaryLabel": "selbständig", "values": ["WAK"]},
+      {"name": "Nantermod Philippe", "secondaryLabel": "selbständig", "values": ["SGK"]},
+      {"name": "Nidegger Yves", "secondaryLabel": "selbständig", "values": []},
+      {"name": "Regazzi Fabio", "secondaryLabel": "angestellt", "values": ["KVF"]},
+      {"name": "Ruppen Franz", "secondaryLabel": "selbständig", "values": ["UREK"]},
+      {"name": "Sommaruga Carlo", "secondaryLabel": "angestellt", "values": []},
+      {"name": "Stamm Luzi", "secondaryLabel": "selbständig", "values": []},
+      {"name": "Vogler Karl", "secondaryLabel": "selbständig", "values": ["UREK"]},
+      {"name": "Vogt Hans-Ueli", "secondaryLabel": "selbständig", "values": []},
+      {"name": "Walti Beat", "secondaryLabel": "selbständig", "values": ["WAK"]}
     ]
   },
   "src": "https://cdn.republik.space/s3/republik-assets/dynamic-components/lobbywatch-widgets/table.js"

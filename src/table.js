@@ -13,6 +13,8 @@ const PADDING = 10
 
 const styles = {
   tableContainer: css({
+    marginTop: 10,
+    marginBottom: 20,
     overflowX: 'auto',
     overflowY: 'hidden',
     marginLeft: -PADDING,
@@ -49,7 +51,7 @@ const styles = {
   })
 }
 
-const Table = ({ title, lead, sources, data, labels }) => {
+const Table = ({ title, lead, sources, data, labels, labelTitle }) => {
 
   const rows = data.map(d => ({
     ...d,
@@ -71,7 +73,7 @@ const Table = ({ title, lead, sources, data, labels }) => {
   return <>
     {title && <ChartTitle>{title}</ChartTitle>}
     {lead && <ChartLead>{lead}</ChartLead>}
-    <ColorLegend values={labels} />
+    <ColorLegend title={labelTitle} inline values={labels} />
     <div {...styles.tableContainer}>
       <table {...styles.table}>
         {rows.map((row, i) => {
