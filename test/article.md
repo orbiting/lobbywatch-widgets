@@ -71,4 +71,155 @@ Hüllen sich in 3 Tüchern: Diskretion, lasche Gesetze und das Berufsgeheimnis.
 
 <hr /></section>
 
+<section><h6>DYNAMIC_COMPONENT</h6>
+
+```
+{
+  "autoHtml": true,
+  "props": {
+    "title": "Die Krankenkassenvertreter",
+    "lead": "",
+    "sources": [
+      {
+        "prefix": "Quelle: ",
+        "text": "lobbywatch.ch",
+        "href": "https://lobbywatch.ch/de"
+      },
+      {
+        "prefix": ", Datenlizenz: ",
+        "text": "CC BY-SA 4.0",
+        "href": "https://creativecommons.org/licenses/by-sa/4.0/deed.de"
+      }
+    ],
+    "labels": [
+      {"value": "Groupe Mutuel", "color": "#1f77b4", "label": "Groupe Mutuel"},
+      {"value": "Visana", "color": "#ff7f0e", "label": "Visana"},
+      {"value": "Concordia", "color": "#2ca02c", "label": "Concordia"},
+      {"value": "SUVA", "color": "#d62728", "label": "SUVA"},
+      {"value": "Santésuisse", "color": "#9467bd", "label": "Santésuisse"},
+      {"value": "Helsana", "color": "#8c564b", "label": "Helsana"},
+      {"value": "KPT", "color": "#e377c2", "label": "KPT"},
+      {"value": "Glarner Krankenversicherung", "color": "#7f7f7f", "label": "Glarner Krankenversicherung"},
+      {"value": "Sanitas", "color": "#bcbd22", "label": "Sanitas"},
+      {"value": "Curafutura", "color": "#17becf", "label": "Curafutura"},
+      {"value": "CSS", "color": "#000", "label": "CSS"}
+    ],
+    "data":  [
+      {
+        "name": "Sebastian Frehner",
+        "values": [
+          "Groupe Mutuel"
+        ]
+      },
+      {
+        "name": "Lorenz Hess",
+        "values": [
+          "Visana"
+        ]
+      },
+      {
+        "name": "Ruth Humbel",
+        "values": [
+          "Concordia"
+        ]
+      },
+      {
+        "name": "Bruno Pezzatti",
+        "values": [
+          "Groupe Mutuel"
+        ]
+      },
+      {
+        "name": "Daniela Schneeberger",
+        "values": [
+          "SUVA"
+        ]
+      },
+      {
+        "name": "Roland Eberle",
+        "values": [
+          "Groupe Mutuel"
+        ]
+      },
+      {
+        "name": "Heinz Brand",
+        "values": [
+          "Santésuisse"
+        ]
+      },
+      {
+        "name": "Martin Candinas",
+        "values": [
+          "Helsana"
+        ]
+      },
+      {
+        "name": "Raymond Clottu",
+        "values": [
+          "Groupe Mutuel"
+        ]
+      },
+      {
+        "name": "Olivier Français",
+        "values": [
+          "Groupe Mutuel"
+        ]
+      },
+      {
+        "name": "Andrea Martina Geissbühler",
+        "values": [
+          "SUVA"
+        ]
+      },
+      {
+        "name": "Ulrich Giezendanner",
+        "values": [
+          "KPT"
+        ]
+      },
+      {
+        "name": "Martin Landolt",
+        "values": [
+          "Glarner Krankenversicherung",
+          "Groupe Mutuel"
+        ]
+      },
+      {
+        "name": "Leo Müller",
+        "values": [
+          "Groupe Mutuel"
+        ]
+      },
+      {
+        "name": "Silva Semadeni",
+        "values": [
+          "SUVA"
+        ]
+      },
+      {
+        "name": "Joachim Eder",
+        "values": [
+          "Sanitas"
+        ]
+      },
+      {
+        "name": "Josef Dittli",
+        "values": [
+          "Curafutura"
+        ]
+      },
+      {
+        "name": "Erich Ettlin",
+        "values": [
+          "CSS"
+        ]
+      }
+    ]
+  },
+  "src": "https://cdn.repub.ch/s3/republik-assets/dynamic-components/lobbywatch-widgets/table.js"
+}
+```
+
+<hr /></section>
+
 <hr /></section>

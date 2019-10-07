@@ -93,7 +93,7 @@ const Table = ({ title, lead, sources, data, labels, labelTitle }) => {
                 : row.name}
               <br />
               {[
-                parliamentarian && parliamentarian.partyMembership.party.abbr,
+                parliamentarian && parliamentarian.partyMembership ? parliamentarian.partyMembership.party.abbr : 'Parteilos',
                 parliamentarian && parliamentarian.canton,
                 row.secondaryLabel
               ].filter(Boolean).join(', ')}
